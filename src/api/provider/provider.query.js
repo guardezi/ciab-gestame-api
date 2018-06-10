@@ -9,5 +9,4 @@ export const FIND_BY_SPECIALTY = `select p.name as name,
                   WHERE s.id = sp.id_service) d_1) AS services
 from service_provider sp
 left join provider p 
-	on p.id = sp.id_provider
-where sp.id_service in ($1)`
+	on p.id = sp.id_provider`
