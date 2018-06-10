@@ -6,7 +6,6 @@ export const FIND_BY_SPECIALTY = `select p.name as name,
 	( SELECT array_to_json(array_agg(row_to_json(d_1.*))) AS array_to_json
            FROM ( SELECT s.*
                    FROM service s
-                  WHERE s.id = sp.id_service) d_1) AS services
-from service_provider sp
-left join provider p 
-	on p.id = sp.id_provider`
+				 left join service_provider sp on sp.id_service = s.id
+				 WHERE sp.id_provider = p.id) d_1) AS services
+from provider p`
