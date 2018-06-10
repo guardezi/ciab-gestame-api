@@ -1,5 +1,5 @@
 export const FIND_ALL_PROVIDERS = 'SELECT * from public.provider'
-export const FIND_BY_SPECIALTY = `select p.name as name,
+export const FIND_BY_SPECIALTY = `select p.id as id, p.name as name,
     p.description as description,
     p.img as image,
 	4 as rate,

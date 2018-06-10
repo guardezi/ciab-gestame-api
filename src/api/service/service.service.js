@@ -17,3 +17,13 @@ export async function getAllServices () {
     throw error
   }
 }
+
+// export async function createNewServices() {
+//   try {
+//     const createService = new PreparedStatement('create-service', FIND_SERVICE, [])
+//     let ser = await db.manyOrNone(findService)
+//     return ser
+//   } catch (error) {
+//     throw error
+//   }
+// }

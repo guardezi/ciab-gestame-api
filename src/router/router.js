@@ -10,11 +10,13 @@ import express from 'express'
 // import productZoneRouter from '../api/productZone/productZone.route'
 import serviceRouter from '../api/service/service.router'
 import providerRouter from '../api/provider/provider.router'
+import orderRouter from '../api/order/order.router'
 const router = express.Router()
 
 // commom
 router.use('/service', serviceRouter)
 router.use('/provider', providerRouter)
+router.use('/order', orderRouter)
 
 // router.use('/device', deviceRouter)
 // router.use('/profile', profileRouter)
