@@ -22,7 +22,7 @@ export async function getAllOrders () {
 export async function createNewOrder (order) {
   console.log('data -> ', order)
   try {
-    const createOrderq = new PreparedStatement('create-order', CREATE_ORDER, [order.id_provider, order.description])
+    const createOrderq = new PreparedStatement('create-order', CREATE_ORDER, [order.id_provider, order.description, order.date_delivery, order.title])
     let ser = await db.oneOrNone(createOrderq)
     return ser
   } catch (error) {
