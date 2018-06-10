@@ -9,10 +9,13 @@ import express from 'express'
 // import actionRouter from '../api/action/action.route'
 // import productZoneRouter from '../api/productZone/productZone.route'
 import serviceRouter from '../api/service/service.router'
+import providerRouter from '../api/provider/provider.router'
 const router = express.Router()
 
 // commom
 router.use('/service', serviceRouter)
+router.use('/provider', providerRouter)
+
 // router.use('/device', deviceRouter)
 // router.use('/profile', profileRouter)
 // router.use('/rate', rateRouter)
