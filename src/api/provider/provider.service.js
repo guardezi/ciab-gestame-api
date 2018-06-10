@@ -5,8 +5,7 @@ import {
 import ErrorHandler from '../../handlers/errorHandler'
 import httpStatus from 'http-status'
 import {
-  FIND_ALL_PROVIDERS,
-  FIND_BY_SPECIALTY
+  FIND_ALL_PROVIDERS
 } from './provider.query'
 
 export async function getAllProviders () {
